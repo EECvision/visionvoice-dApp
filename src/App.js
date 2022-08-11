@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import classes from "./App.module.css";
+import Card from "./components/Card/Card";
+import Navbar from "./components/Navbar/Navbar";
+
+const users = Array(10).fill(null);
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className={classes.container}>
+      <Navbar />
+      <header className={classes.header}>
+        Visionvoice <span className={classes.accent}>SMART Contract</span> Challenge
       </header>
+      <main className={classes.main}>
+        {users.map((user, index) => (
+          <Card key={index} index={index + 1} user={user} />
+        ))}
+      </main>
     </div>
   );
 }

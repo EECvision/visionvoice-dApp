@@ -1,0 +1,41 @@
+.container {
+  min-height: 100vh;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-bottom: 4em;
+  padding: 1em;
+}
+
+.header {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  max-width: 48em;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.header .accent {
+  color: var(--main-accent);
+}
+
+.main {
+  width: 100%;
+  max-width: 64em;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    font-size: 1.5rem;
+  }
+}
+

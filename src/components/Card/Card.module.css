@@ -1,0 +1,46 @@
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-self: flex-start;
+  gap: 1em;
+  background: var(--card-bg);
+  padding: 1em;
+  border-radius: 0.25em;
+  transition: transform 300ms;
+}
+
+.container:hover {
+  transform: scale(1.03);
+}
+
+.index {
+  width: 2em;
+  height: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--index-color);
+  background: var(--index-bg);
+  box-shadow: 0 0 4px black;
+}
+
+.userName {
+  margin-bottom: 0.5em;
+}
+
+.address {
+  width: max-content;
+  background: var(--card-bg-sm);
+  color: var(--main-color-2);
+  padding: 0.5em 0.75em;
+  border-radius: 0.2em;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 480px) {
+  .address {
+    font-size: 0.65rem;
+  }
+}
